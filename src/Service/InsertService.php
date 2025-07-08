@@ -31,7 +31,6 @@ class InsertService
             return 'NULL';
         }
 
-        // SQL standard escaping: egyes idézőjelet duplázzuk meg
         return "'" . str_replace("'", "''", $value) . "'";
     }
 }
